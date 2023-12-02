@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-10 justify-between items-center navbar">
+    <nav className="w-full flex py-4 justify-between items-center navbar">
       <img src={logo} alt="sonukumar" className="w-auto h-[24px] ss:h-[32px] cursor-pointer" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -25,7 +25,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="md:block hidden h-[35px] w-[80px] border-2 border-white rounded-full mx-4 hover:bg-white text-center i ">
+      <div className="md:block hidden h-[35px] w-[80px] border border-white rounded-full mx-4 hover:bg-white text-center i ">
             <p className="text-white hover:text-black mt-[4px]">Hello</p>
       </div>
 
