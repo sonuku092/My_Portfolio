@@ -21,9 +21,9 @@ const Hero = () => {
           Developer
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5 ss:mb-10 mb-5 text-[16px] ss:text-lg`}>
-          Our team of experts uses a methodology to identify the credit cards
-          most likely to fit your needs. We examine annual percentage rates,
-          annual fees.
+        Feel free to connect with me to discuss tech, share ideas, or explore
+        potential opportunities. Let's embark on a journey of innovation
+        together! 
         </p>
 
         
