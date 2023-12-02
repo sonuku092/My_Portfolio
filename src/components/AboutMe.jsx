@@ -12,7 +12,7 @@ const AboutMe = () => (
       <h2 className={styles.heading2}>
         About Me
       </h2>
-      <p className={`${styles.paragraph} max-w-[680px] mt-5`}>
+      <p className={`${styles.paragraph} max-w-[680px] mt-5 text-justify sm:text-left`}>
       Currently, a Curious Information Science and Engineering undergraduate student, who loves all things
         Problem Solving. I believe there is always something to learn from the rapidly moving world. I am a
         passionate coder and know coding languages like C, Java and also core Computer Science concepts like

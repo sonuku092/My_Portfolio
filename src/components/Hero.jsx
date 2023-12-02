@@ -4,13 +4,13 @@ import GetStarted from "./GetStarted";
 
 const Hero = () => {
   return (
-    <section id="profile" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+    <section id="profile" className={`flex md:flex-row flex-col sm:py-[100px] py-6`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
         
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[70px] leading-[60px]">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] md:text-[64px] text-[32px] text-white ss:leading-[70px] leading-[60px]">
             Hello, I'm<br className="ss:block hidden" />{" "}
-            <span className="text-gradient ss:text-[68px] font-bold">Sonu Kumar</span>{" "}
+            <span className="text-gradient ss:text-[68px] md:text-[80px] md:leading-[100px] font-bold">Sonu Kumar</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
@@ -45,8 +45,8 @@ const Hero = () => {
         {/* gradient end */}
       </div>
 
-      <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
+      <div className={`${styles.flexCenter}`}>
+        <GetStarted className />
       </div>
     </section>
   );
