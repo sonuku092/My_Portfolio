@@ -13,12 +13,10 @@ const AboutMe = () => (
         About Me
       </h2>
       <p className={`${styles.paragraph} max-w-[680px] mt-5 text-justify sm:text-left`}>
-      Currently, a Curious Information Science and Engineering undergraduate student, who loves all things
-        Problem Solving. I believe there is always something to learn from the rapidly moving world. I am a
-        passionate coder and know coding languages like C, Java and also core Computer Science concepts like
-        Data Structures and Algorithms. I'm extremely motivated to develop my skills and grow professionally
-        constantly. I'm confident in my ability to come up with interesting ideas for an unforgettable
-        revolution
+      👋 Hello! I'm <span className="text-white cursor-pointer">Sonu Kumar Mukhiya</span>, a tech enthusiast and recent graduate from Atria Institute of Technology with a Bachelor of Engineering in Information Science and Engineering. With a firm foundation in technical knowledge and keen problem-solving acumen, I successfully navigated my academic journey to achieve this milestone.
+      </p>
+      <p className={`${styles.paragraph} max-w-[680px] mt-5 text-justify sm:text-left`}>
+        🌟 Driven by a passion for technology and an unwavering curiosity, I am committed to continuous learning and growth. I thrive on challenges and am eager to contribute my skills to innovative projects and collaborative teams.
       </p>
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
