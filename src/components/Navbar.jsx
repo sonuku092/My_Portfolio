@@ -25,7 +25,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="ss:hidden h-[40px] w-[80px] border border-white rounded-full mx-4 hover:bg-white text-center ">
+      <div className="hidden h-[40px] w-[80px] border border-white rounded-full mx-4 hover:bg-white text-center ">
             <p className="text-white hover:text-black">Hello</p>
       </div>
 
