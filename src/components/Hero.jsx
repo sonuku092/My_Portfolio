@@ -9,34 +9,35 @@ const Hero = () => {
         
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[48px] text-white ss:leading-[100.8px] leading-[75px]">
-            Hii i'm SonuKumar <br className="sm:block hidden" />{" "}
-            <span className="text-gradient">Full Stack</span>{" "}
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[70px] leading-[60px]">
+            Hello, I'm<br className="ss:block hidden" />{" "}
+            <span className="text-gradient ss:text-[68px] font-bold">Sonu Kumar</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
           </div>
         </div>
 
-        {/* <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-          Payment Method.
-        </h1> */}
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[70pxpx] leading-[60px] w-full">
+          Developer
+        </h1>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5 ss:mb-10 mb-5 text-[16px] ss:text-lg`}>
           Our team of experts uses a methodology to identify the credit cards
           most likely to fit your needs. We examine annual percentage rates,
           annual fees.
         </p>
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+
+        
+        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 ">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-white">20%</span> Discount For{" "}
-            <span className="text-white">1 Month</span> Account
+            Download My CV
           </p>
         </div>
       </div>
 
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={heroimg} alt="billing" className="w-auto h-[120%] relative z-[5]" />
+      <div className={`flex-1 flex ${styles.flexCenter} ss:my-0 relative`}>
+        <img src={heroimg} alt="billing" className="w-auto h-[140%] relative z-[5]" />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />

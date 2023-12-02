@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="sonukumar" className="w-auto h-[32px] cursor-pointer" />
+      <img src={logo} alt="sonukumar" className="w-auto h-[24px] ss:h-[32px] cursor-pointer" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -24,6 +24,10 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
+      <div className="h-[40px] w-[80px] border border-white rounded-full mx-4 hover:bg-white text-center ">
+            <p className="text-white hover:text-black">Hello</p>
+      </div>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
