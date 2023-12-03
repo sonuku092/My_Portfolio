@@ -5,7 +5,7 @@ import Button from "./Button";
 const SkillsCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-col h-[100px] w-[110px]  p-1 rounded-[12px] feature-card bg-slate-900 cursor-pointer`}>
     <div className={`w-[100%] h-[80%] rounded-[8px] ${styles.flexCenter} bg-neutral-800`}>
-      <img src={icon} alt="star" className="w-[100%] h-[100%] object-contain" />
+      <img src={icon} alt="star" className="w-[80%] h-[80%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col">
       <h4 className="font-poppins font-semibold text-white text-[16px] my-auto mx-auto">
@@ -22,13 +22,13 @@ const Skills = () =>  (
         Skills 
       </h2>
     </div>
-  <section id="Skills" className={layout.section}>
+  <section id="Skills" className={layout.section1}>
     <div className={layout.sectionInfo}>
-        <h3 className="font-poppins font-semibold text-white text-[18px] mb-1 mx-auto">
+        <h3 className="font-poppins font-semibold text-white text-[18px] my-2 mx-auto">
             FrontEnd
         </h3>
 
-      <div className={`${layout.sectionSkill} flex-col sm:flex-row gap-2`}>
+      <div className={`${layout.sectionSkill} flex-col ss:flex-row gap-2`}>
         {frontend.map((frontend, index) => (
         <SkillsCard key={frontend.id} {...frontend} index={index} />
             ))}
@@ -36,11 +36,11 @@ const Skills = () =>  (
     </div>
 
     <div className={layout.sectionInfo}>
-        <h3 className="font-poppins font-semibold text-white text-[18px] mb-1 mx-auto">
+        <h3 className="font-poppins font-semibold text-white text-[18px] my-2 mx-auto">
             BackEnd
         </h3>
 
-      <div className={`${layout.sectionSkill} flex-col-4 sm:flex-row gap-2`}>
+      <div className={`${layout.sectionSkill} flex-col ss:flex-row gap-2`}>
         {backend.map((backend, index) => (
         <SkillsCard key={backend.id} {...backend} index={index} />
             ))}
@@ -48,11 +48,11 @@ const Skills = () =>  (
     </div>
 
     <div className={layout.sectionInfo}>
-        <h3 className="font-poppins font-semibold text-white text-[18px] mb-1 mx-auto">
+        <h3 className="font-poppins font-semibold text-white text-[18px] my-2 mx-auto">
             Programing Language
         </h3>
 
-      <div className={`${layout.sectionSkill} flex-col sm:flex-row gap-2`}>
+      <div className={`${layout.sectionSkill} flex-col ss:flex-row gap-2`}>
         {progaming.map((progaming, index) => (
         <SkillsCard key={progaming.id} {...progaming} index={index} />
             ))}
