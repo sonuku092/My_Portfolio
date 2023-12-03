@@ -12,10 +12,10 @@ const AboutMe = () => (
       <h2 className={styles.heading2}>
         About Me
       </h2>
-      <p className={`${styles.paragraph} max-w-[680px] mt-5 text-justify sm:text-left`}>
+      <p className={`${styles.paragraph} max-w-[680px] mt-5 `}>
       👋 Hello! I'm <span className="text-white cursor-pointer">Sonu Kumar Mukhiya</span>, a tech enthusiast and recent graduate from Atria Institute of Technology with a Bachelor of Engineering in Information Science and Engineering. With a firm foundation in technical knowledge and keen problem-solving acumen, I successfully navigated my academic journey to achieve this milestone.
       </p>
-      <p className={`${styles.paragraph} max-w-[680px] mt-5 text-justify sm:text-left`}>
+      <p className={`${styles.paragraph} max-w-[680px] mt-5 `}>
         🌟 Driven by a passion for technology and an unwavering curiosity, I am committed to continuous learning and growth. I thrive on challenges and am eager to contribute my skills to innovative projects and collaborative teams.
       </p>
 
