@@ -43,6 +43,30 @@ export const features = [
   },
 ];
 
+export const project = [
+  {
+    id: "project-1",
+    icon: star,
+    title: "Project 1",
+    content:
+      "The best credits",
+  },
+  {
+    id: "project-2",
+    icon: shield,
+    title: "Project 2",
+    content:
+      "We take proactive steps",
+  },
+  {
+    id: "project-3",
+    icon: send,
+    title: "Project 3",
+    content:
+      "A balance transfer",
+  },
+];
+
 export const feedback = [
   {
     id: "feedback-1",
