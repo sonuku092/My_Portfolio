@@ -11,6 +11,7 @@ import Hero from "./Hero";
 import AboutMe from "./AboutMe";
 import Project from "./Project";
 import Skills from "./Skills";
+import Language from "./Language";
 
 export {
   Navbar,
@@ -26,4 +27,5 @@ export {
   AboutMe,
   Project,
   Skills,
+  Language,
 };

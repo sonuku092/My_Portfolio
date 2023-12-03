@@ -3,12 +3,12 @@ import styles, { layout } from "../style";
 import Button from "./Button";
 
 const SkillsCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-col h-[85px] w-[92px]  p-1 rounded-[12px] feature-card bg-slate-900 cursor-pointer`}>
+  <div className={`flex flex-col h-[80px] w-[85px]  p-1 rounded-[12px] feature-card bg-slate-900 cursor-pointer`}>
     <div className={`w-[100%] h-[80%] rounded-[8px] ${styles.flexCenter} bg-neutral-800`}>
       <img src={icon} alt="star" className="w-[80%] h-[80%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col">
-      <h4 className="font-poppins font-semibold text-white text-[16px] my-auto mx-auto">
+      <h4 className="font-poppins text-white font-light text-[12px] my-auto mx-auto">
         {title}
       </h4>
     </div>
@@ -18,7 +18,7 @@ const SkillsCard = ({ icon, title, content, index }) => (
 const Skills = () =>  (
     <>
     <div className="">
-    <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[50px] w-full text-center">
+    <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white -mb-10 w-full text-center">
         Skills 
       </h2>
     </div>
@@ -60,6 +60,7 @@ const Skills = () =>  (
     </div>
 
   </section>
+
   </>
 );
 
