@@ -20,16 +20,16 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Language = () =>  (
   <section id="features" className={layout.section}>
-    <div className={`${layout.sectionImg} flex-col`}>
-    <h3 className="text-white text-[20px] font-poppins font-semibold ">
-      Soft Skills
-    </h3>
+    <div className={`${layout.sectionImg} flex-col border-[1px] rounded-[12px]`}>
+      <h3 className="text-white text-[20px] font-poppins font-semibold ">
+        Soft Skills
+      </h3>
         {softskills.map((softskills, index) => (
         <FeatureCard key={softskills.id} {...softskills} index={index} />
       ))}
     </div>
 
-    <div className={`${layout.sectionImg} flex-col`}>
+    <div className={`${layout.sectionImg} flex-col border-[1px] rounded-[12px]`}>
       <h3 className="text-white text-[20px] font-poppins font-semibold ">
         Language
       </h3>
