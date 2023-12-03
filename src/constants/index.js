@@ -49,14 +49,14 @@ export const project = [
   {
     id: "project-1",
     icon: project1,
-    title: "Project 1",
+    title: "Image Gallery App",
     content:
       "The best credits",
   },
   {
     id: "project-2",
     icon: project2,
-    title: "Project 2",
+    title: "Portfolio",
     content:
       "We take proactive steps",
   },
