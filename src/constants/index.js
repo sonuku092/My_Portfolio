@@ -1,4 +1,5 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git } from "../icon";
 
 export const navLinks = [
   {
@@ -70,29 +71,50 @@ export const project = [
 export const frontend = [
   {
     id: "html",
-    icon: star,
+    icon: html,
     title: "HTML",
     content:
       "The best credits",
   },
   {
     id: "css",
-    icon: shield,
+    icon: css,
     title: "CSS",
     content:
       "We take proactive steps",
   },
   {
-    id: "css",
-    icon: shield,
-    title: "CSS",
-    content:
-      "We take proactive steps",
-  },
-  {
-    id: "js",
-    icon: send,
+    id: "javascript",
+    icon: javascript,
     title: "JavaScript",
+    content:
+      "We take proactive steps",
+  },
+  {
+    id: "bootstrap",
+    icon: bootstrap,
+    title: "Bootstrap",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "figma",
+    icon: figma,
+    title: "Figma",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "reactjs",
+    icon: reactjs,
+    title: "ReactJs",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "nextjs",
+    icon: nextjs,
+    title: "NextJs",
     content:
       "A balance transfer",
   },
@@ -102,43 +124,50 @@ export const frontend = [
 export const backend = [
   {
     id: "nodejs",
-    icon: star,
+    icon: nodejs,
     title: "NodeJs",
     content:
       "The best credits",
   },
   {
     id: "mongodb",
-    icon: shield,
+    icon: mongodb,
     title: "MongoDB",
     content:
       "We take proactive steps",
   },
   {
-    id: "javas",
-    icon: send,
-    title: "javas",
+    id: "express",
+    icon: express,
+    title: "Express",
     content:
       "A balance transfer",
   },
   {
-    id: "js",
-    icon: send,
-    title: "JavaScript",
+    id: "mysql",
+    icon: mysql,
+    title: "MySQL",
     content:
       "A balance transfer",
   },
   {
-    id: "js",
-    icon: send,
-    title: "JavaScript",
+    id: "angular",
+    icon: angular,
+    title: "Angular",
     content:
       "A balance transfer",
   },
   {
-    id: "js",
-    icon: send,
-    title: "JavaScript",
+    id: "firebase",
+    icon: firebase,
+    title: "Firebase",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "msserver",
+    icon: msserver,
+    title: "MS Server",
     content:
       "A balance transfer",
   },
@@ -146,34 +175,54 @@ export const backend = [
 
 export const progaming = [
   {
-    id: "skl-1",
-    icon: star,
-    title: "Skill 1",
+    id: "java",
+    icon: java,
+    title: "Java",
     content:
       "The best credits",
   },
   {
-    id: "kill-2",
-    icon: shield,
-    title: "Skill 2",
+    id: "c",
+    icon: c,
+    title: "C",
     content:
       "We take proactive steps",
   },
   {
-    id: "skil-3",
-    icon: send,
-    title: "Skill 3",
+    id: "android",
+    icon: android,
+    title: "Android",
     content:
       "A balance transfer",
   },
   {
-    id: "js",
-    icon: send,
-    title: "JavaScript",
+    id: "python",
+    icon: python,
+    title: "Python",
     content:
       "A balance transfer",
   },
-  
+  {
+    id: "cpp",
+    icon: cpp,
+    title: "C++",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "linux",
+    icon: linux,
+    title: "Linux",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "git",
+    icon: git,
+    title: "git",
+    content:
+      "A balance transfer",
+  },
 ];
 
 export const feedback = [
