@@ -28,7 +28,7 @@ const Skills = () =>  (
             FrontEnd
         </h3>
 
-      <div className={`${layout.sectionSkill} flex-col ss:flex-row gap-2`}>
+      <div className={`${layout.sectionSkill} flex-shrink-0 ss:flex-row gap-2`}>
         {frontend.map((frontend, index) => (
         <SkillsCard key={frontend.id} {...frontend} index={index} />
             ))}
@@ -40,7 +40,7 @@ const Skills = () =>  (
             BackEnd
         </h3>
 
-      <div className={`${layout.sectionSkill} flex-col ss:flex-row gap-2`}>
+      <div className={`${layout.sectionSkill} flex-shrink-0 ss:flex-row gap-2`}>
         {backend.map((backend, index) => (
         <SkillsCard key={backend.id} {...backend} index={index} />
             ))}
@@ -52,7 +52,7 @@ const Skills = () =>  (
             Programing Language
         </h3>
 
-      <div className={`${layout.sectionSkill} flex-col ss:flex-row gap-2`}>
+      <div className={`${layout.sectionSkill} flex-shrink-0 ss:flex-row gap-2`}>
         {progaming.map((progaming, index) => (
         <SkillsCard key={progaming.id} {...progaming} index={index} />
             ))}
