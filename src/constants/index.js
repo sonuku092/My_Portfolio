@@ -128,6 +128,20 @@ export const backend = [
     content:
       "A balance transfer",
   },
+  {
+    id: "js",
+    icon: send,
+    title: "JavaScript",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "js",
+    icon: send,
+    title: "JavaScript",
+    content:
+      "A balance transfer",
+  },
 ];
 
 export const progaming = [
