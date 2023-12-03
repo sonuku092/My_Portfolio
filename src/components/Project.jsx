@@ -19,7 +19,8 @@ const ProjectCard = ({ icon, title, content, index }) => (
 );
 
 const Project = () =>  (
-  <section id="projects" className={layout.section1}>
+  <section id="projects" className={`${layout.section1} relative `}>
+        <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-0" />
     <div className={layout.sectionInfo1}>
       <h2 className={styles.heading2}>
         Project, <br className="sm:block hidden" /> 
