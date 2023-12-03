@@ -3,7 +3,7 @@ import styles, { layout } from "../style";
 import Button from "./Button";
 
 const SkillsCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-col h-[100px] w-[110px]  p-1 rounded-[12px] feature-card bg-slate-900 cursor-pointer`}>
+  <div className={`flex flex-col h-[85px] w-[92px]  p-1 rounded-[12px] feature-card bg-slate-900 cursor-pointer`}>
     <div className={`w-[100%] h-[80%] rounded-[8px] ${styles.flexCenter} bg-neutral-800`}>
       <img src={icon} alt="star" className="w-[80%] h-[80%] object-contain" />
     </div>
