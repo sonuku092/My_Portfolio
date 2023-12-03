@@ -19,6 +19,12 @@ import nextjs from "./nextjs.svg";
 import reactjs from "./reactjs.svg";
 import linux from "./linux.svg";
 import git from "./git.svg";
+import linkedin from "./linkedin.svg";
+import facebook from "./facebook.svg";
+import instagram from "./instagram.svg";
+import twitter from "./twitter.svg";
+import email from "./email.svg";
+import youtube from "./youtube.svg";
 
 
 export {
@@ -43,4 +49,10 @@ export {
   reactjs,
   linux,
   git,
+  linkedin,
+  instagram,
+  facebook,
+  email,
+  twitter,
+  youtube,
 };

@@ -1,5 +1,6 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
-import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git } from "../icon";
+import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git, youtube } from "../icon";
+import {project1, project2, project3} from "../image";
 
 export const navLinks = [
   {
@@ -47,22 +48,22 @@ export const features = [
 export const project = [
   {
     id: "project-1",
-    icon: star,
+    icon: project1,
     title: "Project 1",
     content:
       "The best credits",
   },
   {
     id: "project-2",
-    icon: shield,
+    icon: project2,
     title: "Project 2",
     content:
       "We take proactive steps",
   },
   {
     id: "project-3",
-    icon: send,
-    title: "Project 3",
+    icon: project3,
+    title: "Weather App",
     content:
       "A balance transfer",
   },
@@ -306,14 +307,14 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Partner",
+    title: "Contacts",
     links: [
       {
-        name: "Our Partner",
+        name: "Sonukumarmukhiya04@gmail.com",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
-        name: "Become a Partner",
+        name: "+91 9262355173",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
@@ -341,6 +342,7 @@ export const socialMedia = [
     icon: linkedin,
     link: "https://www.linkedin.com/",
   },
+  
 ];
 
 export const clients = [

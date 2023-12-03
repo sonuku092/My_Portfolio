@@ -4,8 +4,8 @@ import Button from "./Button";
 
 const ProjectCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-col h-[240px] w-[100%] sm:w-[320px] p-[6px] rounded-[18px] feature-card bg-slate-900 cursor-pointer`}>
-    <div className={`w-[100%] h-[80%] rounded-[14px] ${styles.flexCenter} bg-neutral-800`}>
-      <img src={icon} alt="star" className="w-[100%] h-[100%] object-contain" />
+    <div className={`w-[100%] h-[100%] rounded-[14px] ${styles.flexCenter} bg-neutral-800 overflow-hidden`}>
+      <img src={icon} alt="star" className=" h-full w-fit object-cover object-center" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className="font-poppins font-semibold text-white text-[18px] mb-1">
