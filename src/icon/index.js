@@ -25,6 +25,12 @@ import instagram from "./instagram.svg";
 import twitter from "./twitter.svg";
 import email from "./email.svg";
 import youtube from "./youtube.svg";
+import azure from "./azure.svg";
+import hindi from "./hindi.jpg";
+import english from "./english.png";
+import database from "./database.png";
+import pdf from "./pdf.png";
+import algorithm from "./algorithm.png";
 
 
 export {
@@ -55,4 +61,10 @@ export {
   email,
   twitter,
   youtube,
+  azure,
+  hindi,
+  english,
+  database,
+  pdf,
+  algorithm,
 };

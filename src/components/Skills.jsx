@@ -1,6 +1,7 @@
 import { backend, frontend, progaming, project} from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import Language from "./Language";
 
 const SkillsCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-col h-[80px] w-[85px]  p-1 rounded-[12px] feature-card bg-slate-900 cursor-pointer`}>
@@ -61,6 +62,7 @@ const Skills = () =>  (
 
   </section>
 
+  <Language/>
   </>
 );
 

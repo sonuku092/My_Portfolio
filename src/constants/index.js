@@ -1,5 +1,5 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
-import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git, youtube } from "../icon";
+import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git, youtube, azure, hindi, english, database, pdf, algorithm } from "../icon";
 import {project1, project2, project3} from "../image";
 
 export const navLinks = [
@@ -223,6 +223,54 @@ export const progaming = [
     title: "git",
     content:
       "A balance transfer",
+  },
+];
+
+export const language = [
+  {
+    id: "english",
+    icon: english,
+    title: "English",
+    content:
+      "Professional",
+  },
+  {
+    id: "hindi",
+    icon: english,
+    title: "Hindi",
+    content:
+      "Read, Write and Speak",
+  },
+  {
+    id: "maithali",
+    icon: english,
+    title: "Maithili",
+    content:
+      "Mother tongue",
+  },
+];
+
+export const softskills = [
+  {
+    id: "ps",
+    icon: java,
+    title: "Problem Solving",
+    content:
+      "It is a fundamental concept in computer science that focuses on organizing and manipulating data efficiently.",
+  },
+  {
+    id: "dsa",
+    icon: algorithm,
+    title: "Data Structures and Algorithms.",
+    content:
+      "It is a fundamental concept in computer science that focuses on organizing and manipulating data efficiently.",
+  },
+  {
+    id: "dbms",
+    icon: database,
+    title: "Database Management System.",
+    content:
+      "This is a software for storing and retrieving users' data while considering appropriate security measures.",
   },
 ];
 
