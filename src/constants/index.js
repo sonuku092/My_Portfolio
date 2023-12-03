@@ -67,6 +67,101 @@ export const project = [
   },
 ];
 
+export const frontend = [
+  {
+    id: "html",
+    icon: star,
+    title: "HTML",
+    content:
+      "The best credits",
+  },
+  {
+    id: "css",
+    icon: shield,
+    title: "CSS",
+    content:
+      "We take proactive steps",
+  },
+  {
+    id: "css",
+    icon: shield,
+    title: "CSS",
+    content:
+      "We take proactive steps",
+  },
+  {
+    id: "js",
+    icon: send,
+    title: "JavaScript",
+    content:
+      "A balance transfer",
+  },
+
+];
+
+export const backend = [
+  {
+    id: "nodejs",
+    icon: star,
+    title: "NodeJs",
+    content:
+      "The best credits",
+  },
+  {
+    id: "mongodb",
+    icon: shield,
+    title: "MongoDB",
+    content:
+      "We take proactive steps",
+  },
+  {
+    id: "javas",
+    icon: send,
+    title: "javas",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "js",
+    icon: send,
+    title: "JavaScript",
+    content:
+      "A balance transfer",
+  },
+];
+
+export const progaming = [
+  {
+    id: "skl-1",
+    icon: star,
+    title: "Skill 1",
+    content:
+      "The best credits",
+  },
+  {
+    id: "kill-2",
+    icon: shield,
+    title: "Skill 2",
+    content:
+      "We take proactive steps",
+  },
+  {
+    id: "skil-3",
+    icon: send,
+    title: "Skill 3",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "js",
+    icon: send,
+    title: "JavaScript",
+    content:
+      "A balance transfer",
+  },
+  
+];
+
 export const feedback = [
   {
     id: "feedback-1",

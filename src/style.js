@@ -26,6 +26,7 @@ export const layout = {
 
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
   sectionInfo1: `flex-[60%] ${styles.flexStart} flex-col`,
+  sectionSkill: `flex-1 ${styles.flexStart} flex-col w-full`,
 };
 
 export default styles;

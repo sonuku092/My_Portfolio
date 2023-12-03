@@ -10,6 +10,7 @@ import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import AboutMe from "./AboutMe";
 import Project from "./Project";
+import Skills from "./Skills";
 
 export {
   Navbar,
@@ -23,5 +24,6 @@ export {
   Testimonials,
   Hero,
   AboutMe,
-  Project
+  Project,
+  Skills,
 };
