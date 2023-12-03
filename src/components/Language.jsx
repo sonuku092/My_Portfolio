@@ -1,6 +1,5 @@
 import { language, softskills } from "../constants";
 import styles, { layout, } from "../style";
-import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-2 w-full rounded-[12px] ${index !== softskills.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
