@@ -24,6 +24,7 @@ export const layout = {
   sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
   sectionImg1: `flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
 
+
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
   sectionInfo1: `flex-[60%] ${styles.flexStart} flex-col`,
   sectionSkill: `flex-1 ${styles.flexStart} flex-wrap w-full`,

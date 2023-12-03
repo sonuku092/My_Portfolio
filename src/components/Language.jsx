@@ -2,7 +2,7 @@ import { language, softskills } from "../constants";
 import styles, { layout, } from "../style";
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-2 w-full rounded-[12px] ${index !== softskills.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
+  <div className={`flex flex-row p-2 w-full rounded-[12px] ${index !== softskills.length - 1 ? "mb-2" : "mb-0"} feature-card`}>
     <div className={`w-[42px] h-[42px] rounded-full ${styles.flexCenter} bg-dimBlue `}>
       <img src={icon} alt="star" className="w-[70%] h-[70%] object-contain" />
     </div>
@@ -20,7 +20,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Language = () =>  (
   <section id="features" className={layout.section}>
     <div className={`${layout.sectionImg} flex-col border-[1px] rounded-[12px]`}>
-      <h3 className="text-white text-[20px] font-poppins font-semibold ">
+      <h3 className="text-white text-[20px] w-full text-center font-poppins font-semibold leading-10 rounded-xl m-1">
         Soft Skills
       </h3>
         {softskills.map((softskills, index) => (
@@ -29,7 +29,7 @@ const Language = () =>  (
     </div>
 
     <div className={`${layout.sectionImg} flex-col border-[1px] rounded-[12px]`}>
-      <h3 className="text-white text-[20px] font-poppins font-semibold ">
+      <h3 className="text-white text-[20px] w-full text-center font-poppins font-semibold leading-10 rounded-xl m-1 feature-card">
         Language
       </h3>
       {language.map((language, index) => (
