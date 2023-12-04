@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   function setFixed () {
-    if(window.scrollY >= 150) {
+    if(window.scrollY >= 120) {
       setFix(true)
     }
     else{
