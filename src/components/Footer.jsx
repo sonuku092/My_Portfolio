@@ -8,11 +8,11 @@ const Footer = () => (
       <div className="flex-[1] flex flex-col justify-start mr-10">
         <img
           src={sonukm}
-          alt="hoobank"
-          className="w-[266px] h-[72.14px] object-contain"
+          alt="SonuKM"
+          className="ss:w-[266px] ss:h-[72.14px] w-[200px] h-[52.14px] shrink-4 object-contain "
         />
-        <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
-          A new way to make the payments easy, reliable and secure.
+        <p className={`font-poppins font-normal text-dimWhite xs:text-[18px] text-[12px] leading-[30.8px] mt-4 max-w-[312px] xs:te`}>
+          Aspiring Student | Passionate Learner | Seeking Opportunities to Grow and Contribute
         </p>
       </div>
 

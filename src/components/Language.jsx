@@ -29,7 +29,7 @@ const Language = () =>  (
     </div>
 
     <div className={`${layout.sectionImg} flex-col border-[1px] rounded-[12px]`}>
-      <h3 className="text-white text-[20px] w-full text-center font-poppins font-semibold leading-10 rounded-xl m-1 feature-card">
+      <h3 className="text-white text-[20px] w-full text-center font-poppins font-semibold leading-10 rounded-xl m-1">
         Language
       </h3>
       {language.map((language, index) => (

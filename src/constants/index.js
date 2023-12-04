@@ -368,7 +368,7 @@ export const footerLinks = [
         link: "https://www.hoobank.com/explore/",
       },
       {
-        name: "Terms & Services",
+        name: "",
         link: "https://www.hoobank.com/terms-and-services/",
       },
     ],
@@ -394,7 +394,7 @@ export const footerLinks = [
     title: "Contacts",
     links: [
       {
-        name: "Sonukumarmukhiya04@gmail.com",
+        name: "sonukumarmukhiya04@gmail.com",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
@@ -409,22 +409,22 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/s_o_n_u_k_07/",
   },
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/sonukumarm02",
   },
   {
     id: "social-media-3",
     icon: twitter,
-    link: "https://www.twitter.com/",
+    link: "https://twitter.com/sonukm02",
   },
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/sonukm/",
   },
   
 ];
