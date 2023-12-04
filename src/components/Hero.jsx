@@ -8,17 +8,17 @@ const Hero = () => {
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
         
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] md:text-[64px] text-[32px] text-white ss:leading-[70px] leading-[60px]">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] sm:text-[58px] md:text-[64px] text-[24px] text-white ss:leading-[70px] leading-[50px]">
             Hello, I'm<br/>{" "}
-            <span className="text-gradient ss:text-[68px] md:text-[80px] md:leading-[100px] font-bold">Sonu Kumar</span>{" "}
+            <span className="text-gradient text-[48px] ss:text-[68px] md:text-[80px] md:leading-[100px] font-bold">Sonu Kumar</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
           </div>
         </div>
 
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[70pxpx] leading-[60px] w-full">
-          Developer
+        <h1 className="font-poppins font-semibold ss:text-[38px] sm:text-[48px] text-[20px] text-white ss:leading-[70px] leading-[40px] w-full">
+          Full Stack Web Deveveloper.
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5 ss:mb-10 mb-5 text-[16px] ss:text-lg`}>
         Feel free to connect with me to discuss tech, share ideas, or explore
