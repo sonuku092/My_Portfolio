@@ -6,11 +6,11 @@ import { navLinks } from "../constants";
 
 const Navbar = () => {
   const [ fix, setFix] = useState( false);
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("profile");
   const [toggle, setToggle] = useState(false);
 
   function setFixed () {
-    if(window.scrollY >= 100) {
+    if(window.scrollY >= 150) {
       setFix(true)
     }
     else{
@@ -21,7 +21,7 @@ const Navbar = () => {
   window.addEventListener("scroll", setFixed)
 
   return (
-    <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? "bg-black-gradient":"bg-transparent"} ? `}>
+    <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? " backdrop-blur-sm bg-white/20 h-[7%]":"bg-transparent"} ? `}>
       <img src={sk} alt="sonukumar" className="w-auto h-[24px] ss:h-[32px] cursor-pointer hover:bg-white rounded-lg" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -29,7 +29,7 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white font-medium" : "text-dimWhite font-normal"
+              active === nav.title ? "text-white font-medium" : "text-dimWhite font-normal hover:text-white"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
@@ -60,7 +60,7 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
+                  active === nav.title ? "text-white" : "text-dimWhite hover:text-white"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
