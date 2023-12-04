@@ -53,15 +53,15 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-4 backdrop-blur-sm bg-white/50 absolute top-[60px] right-0 mx-2 my-2 min-w-[140px] rounded-xl sidebar`}
+          } backdrop-blur-sm bg-white/80 absolute top-[60px] right-0 mx-2 my-2 p-[4px] min-w-[140px] rounded-lg sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                className={`font-poppins font-medium cursor-pointer text-[16px] bg-black/40 w-full p-[4px] rounded-md ${
                   active === nav.title ? "text-white" : "text-dimWhite hover:text-white"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                } ${index === navLinks.length - 1 ? "mb-0" : "mb-1"}`}
                 onClick={() => setActive(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
