@@ -1,5 +1,5 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
-import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git, youtube, azure, hindi, english, database, pdf, algorithm, ait, google_cloud } from "../icon";
+import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git, youtube, azure, hindi, english, database, pdf, algorithm, ait, google_cloud, tailwindcss } from "../icon";
 import {project1, project2, project3} from "../image";
 
 export const navLinks = [
@@ -99,6 +99,13 @@ export const frontend = [
     id: "bootstrap",
     icon: bootstrap,
     title: "Bootstrap",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "tailwind",
+    icon: tailwindcss,
+    title: "Tailwind",
     content:
       "A balance transfer",
   },

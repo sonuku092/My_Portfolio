@@ -33,6 +33,7 @@ import pdf from "./pdf.png";
 import algorithm from "./algorithm.png";
 import ait from "./ait.png";
 import google_cloud from "./google_cloud.svg";
+import tailwindcss from "./tailwindcss.svg";
 
 
 export {
@@ -71,4 +72,5 @@ export {
   algorithm,
   ait,
   google_cloud,
+  tailwindcss,
 };
