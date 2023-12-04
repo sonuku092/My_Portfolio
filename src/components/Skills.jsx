@@ -18,7 +18,7 @@ const SkillsCard = ({ icon, title, content, index }) => (
 
 const Skills = () =>  (
     <>
-    <div className="">
+    <div id="skills" className="m-10">
     <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white -mb-10 w-full text-center">
         Skills 
       </h2>

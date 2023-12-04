@@ -1,5 +1,5 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
-import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git, youtube, azure, hindi, english, database, pdf, algorithm } from "../icon";
+import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git, youtube, azure, hindi, english, database, pdf, algorithm, ait, google_cloud } from "../icon";
 import {project1, project2, project3} from "../image";
 
 export const navLinks = [
@@ -14,6 +14,10 @@ export const navLinks = [
   {
     id: "project",
     title: "Project",
+  },
+  {
+    id: "skills",
+    title: "Skills",
   },
   {
     id: "contact",
@@ -274,6 +278,24 @@ export const softskills = [
   },
 ];
 
+export const experience = [
+  {
+    id: "ps",
+    icon: google_cloud,
+    title: "Full Stack Web Development",
+    content:
+      "Varcon Pvt Ltd.",
+  },
+];
+export const education = [
+  {
+    id: "ait",
+    icon: ait,
+    title: "Atria Institute of Technology",
+    content:
+      "BE in Information Science & Engineering",
+  },
+];
 export const feedback = [
   {
     id: "feedback-1",

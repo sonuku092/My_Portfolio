@@ -1,27 +1,73 @@
 import { apple, bill, about, google } from "../assets";
 import styles, { layout } from "../style";
+import { experience, education } from "../constants";
+
+const FeatureCard = ({ icon, title, content, index }) => (
+  <div
+    className={`flex flex-row p-2 w-full rounded-[12px] ${
+      index !== education.length - 1 ? "mb-2" : "mb-0"
+    } feature-card`}
+  >
+    <div
+      className={`w-[42px] h-[42px] rounded-full ${styles.flexCenter} bg-dimBlue `}
+    >
+      <img src={icon} alt="star" className="w-[70%] h-[70%] object-contain" />
+    </div>
+    <div className="flex-1 flex flex-col ml-3">
+      <h4 className="font-poppins font-semibold text-white text-[14px] leading-[20.4px] mb-1">
+        {title}
+      </h4>
+      <p className="font-poppins font-normal text-dimWhite text-[10px]">
+        {content}
+      </p>
+    </div>
+  </div>
+);
 
 const AboutMe = () => (
   <section id="about" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
-      <img src={about} alt="billing" className="w-[80%] h-auto relative z-[5] cursor-pointer" />
-
+      <img
+        src={about}
+        alt="about"
+        className="w-[80%] h-auto relative z-[5] cursor-pointer"
+      />
     </div>
 
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        About Me
-      </h2>
+      <h2 className={styles.heading2}>About Me</h2>
       <p className={`${styles.paragraph} max-w-[680px] mt-5 `}>
-      👋 Hello! I'm <span className="text-white cursor-pointer">Sonu Kumar Mukhiya</span>, a tech enthusiast and recent graduate from Atria Institute of Technology with a Bachelor of Engineering in Information Science and Engineering. With a firm foundation in technical knowledge and keen problem-solving acumen, I successfully navigated my academic journey to achieve this milestone.
-      </p>
-      <p className={`${styles.paragraph} max-w-[680px] mt-5 `}>
-        🌟 Driven by a passion for technology and an unwavering curiosity, I am committed to continuous learning and growth. I thrive on challenges and am eager to contribute my skills to innovative projects and collaborative teams.
+        👋 Hello! I'm{" "}
+        <span className="text-white cursor-pointer">Sonu Kumar Mukhiya</span>, a
+        tech enthusiast and recent graduate from Atria Institute of Technology
+        with a Bachelor of Engineering in Information Science and Engineering.
+        With a firm foundation in technical knowledge and keen problem-solving
+        acumen, I successfully navigated my academic journey to achieve this
+        milestone.
       </p>
 
-      <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
-        <img src={apple} alt="google_play" className="w-[128.86px] h-[42.05px] object-contain mr-5 cursor-pointer" />
-        <img src={google} alt="google_play" className="w-[144.17px] h-[43.08px] object-contain cursor-pointer" />
+      <div className="flex flex-row flex-wrap mt-10 content-center">
+        <div
+          className={`${layout.section1} flex-col border-[1px] rounded-[12px] m-1`}
+        >
+          <h3 className="text-dimWhite text-[20px] w-full text-center font-poppins font-semibold leading-8 rounded-xl m-1">
+            Experience
+          </h3>
+          {experience.map((experience, index) => (
+            <FeatureCard key={experience.id} {...experience} index={index} />
+          ))}
+        </div>
+
+        <div
+          className={`${layout.section1} flex-col border-[1px] rounded-[12px] m-1`}
+        >
+          <h3 className="text-dimWhite text-[20px] w-full text-center font-poppins font-semibold leading-8 rounded-xl m-1 feature-card">
+            Education
+          </h3>
+          {education.map((education, index) => (
+            <FeatureCard key={education.id} {...education} index={index} />
+          ))}
+        </div>
       </div>
     </div>
   </section>
