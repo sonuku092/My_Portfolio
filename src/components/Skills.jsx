@@ -18,12 +18,12 @@ const SkillsCard = ({ icon, title, content, index }) => (
 
 const Skills = () =>  (
     <>
-    <div id="skills" className="m-10">
+    <div id="skills" className="mb-10 ss:mt-10 mt-10">
     <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white -mb-10 w-full text-center">
         Skills 
       </h2>
     </div>
-  <section id="Skills" className={layout.section1}>
+  <section id="Skills" className={layout.section}>
     <div className={layout.sectionInfo}>
         <h3 className="font-poppins font-semibold text-white text-[18px] my-2 mx-auto">
             FrontEnd
