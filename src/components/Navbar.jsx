@@ -1,14 +1,27 @@
 import { useState } from "react";
+import styles from "../style";
 
 import { close, logo, menu,sk } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
+  const [ fix, setFix] = useState( false);
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
+  function setFixed () {
+    if(window.scrollY >= 100) {
+      setFix(true)
+    }
+    else{
+      setFix(false)
+    }
+  }
+
+  window.addEventListener("scroll", setFixed)
+
   return (
-    <nav className="w-full flex py-4 justify-between items-center navbar">
+    <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? "bg-black-gradient":"bg-transparent"} ? `}>
       <img src={sk} alt="sonukumar" className="w-auto h-[24px] ss:h-[32px] cursor-pointer hover:bg-white rounded-lg" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -25,7 +38,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="md:block hidden h-[35px] w-[80px] border border-white rounded-full mx-4 hover:bg-white text-center i ">
+      <div className="sm:block hidden h-[35px] w-[80px] border border-white rounded-full mx-4 hover:bg-white text-center i ">
             <p className="text-white hover:text-black mt-[4px]">Hello</p>
       </div>
 
@@ -40,7 +53,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-4 bg-black-gradient absolute top-[60px] right-0 mx-2 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
