@@ -9,7 +9,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
     } feature-card`}
   >
     <div
-      className={`w-[42px] h-[42px] rounded-full ${styles.flexCenter} bg-dimBlue `}
+      className={`w-[42px] h-[42px] rounded-full ${styles.flexCenter} bg-zinc-300 hover:bg-white `}
     >
       <img src={icon} alt="star" className="w-[70%] h-[70%] object-contain" />
     </div>
@@ -46,9 +46,9 @@ const AboutMe = () => (
         milestone.
       </p>
 
-      <div className="flex flex-row flex-wrap mt-10 content-center">
+      <div className="flex flex-row flex-wrap mt-10 content-center items-start  ">
         <div
-          className={`${layout.section1} flex-col border-[1px] rounded-[12px] m-1`}
+          className={`${layout.section1} flex-col border-[1px] rounded-[12px] border-dimWhite m-1`}
         >
           <h3 className="text-dimWhite text-[20px] w-full text-center font-poppins font-semibold leading-8 rounded-xl m-1">
             Experience
@@ -59,9 +59,9 @@ const AboutMe = () => (
         </div>
 
         <div
-          className={`${layout.section1} flex-col border-[1px] rounded-[12px] m-1`}
+          className={`${layout.section1} flex-col border-[1px] rounded-[12px] border-dimWhite m-1`}
         >
-          <h3 className="text-dimWhite text-[20px] w-full text-center font-poppins font-semibold leading-8 rounded-xl m-1 feature-card">
+          <h3 className="text-dimWhite text-[20px] w-full text-center font-poppins font-semibold leading-8 rounded-xl m-1">
             Education
           </h3>
           {education.map((education, index) => (

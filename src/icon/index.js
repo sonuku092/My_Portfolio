@@ -34,6 +34,7 @@ import algorithm from "./algorithm.png";
 import ait from "./ait.png";
 import google_cloud from "./google_cloud.svg";
 import tailwindcss from "./tailwindcss.svg";
+import bseb from "./bseb.png";
 
 
 export {
@@ -73,4 +74,5 @@ export {
   ait,
   google_cloud,
   tailwindcss,
+  bseb,
 };
