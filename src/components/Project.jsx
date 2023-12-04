@@ -26,7 +26,7 @@ const Project = () =>  (
         Project, <br className="sm:block hidden" /> 
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card
+        Recent Project
       </p>
 
       <Button styles={`mt-10`} />
