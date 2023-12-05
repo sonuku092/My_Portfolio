@@ -53,9 +53,10 @@ const Navbar = () => {
 
         <div
           className={`${
-            !toggle ? "hidden" : "flex"
+            !toggle ? "hidden" : "flex flex-col"
           } backdrop-blur-sm bg-white/90 absolute top-[60px] border-2 border-white right-0 mx-2 my-2 p-[4px] min-w-[140px] rounded-lg sidebar`}
         >
+          <h3 className="text-cyan-600 font-poppins font-normal border-b-[1px] border-black/20 text-center">Menu</h3>
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
