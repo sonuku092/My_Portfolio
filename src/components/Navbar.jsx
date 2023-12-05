@@ -21,7 +21,7 @@ const Navbar = () => {
   window.addEventListener("scroll", setFixed)
 
   return (
-    <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? " backdrop-blur-sm bg-white/20 h-[7%]":"bg-transparent"} ? `}>
+    <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? " backdrop-blur-sm bg-white/20 h-[7%] border-b-[1px] border-dimWhite" :"bg-transparent"}`}>
       <img src={sk} alt="sonukumar" className="w-auto h-[24px] ss:h-[32px] cursor-pointer hover:bg-white rounded-lg" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -53,14 +53,14 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } backdrop-blur-sm bg-white/80 absolute top-[60px] right-0 mx-2 my-2 p-[4px] min-w-[140px] rounded-lg sidebar`}
+          } backdrop-blur-sm bg-white/90 absolute top-[60px] border-2 border-white right-0 mx-2 my-2 p-[4px] min-w-[140px] rounded-lg sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] bg-black/40 w-full p-[4px] rounded-md ${
-                  active === nav.title ? "text-white" : "text-dimWhite hover:text-white"
+                className={`font-poppins font-medium cursor-pointer text-[16px] w-full p-[4px] rounded-md ${
+                  active === nav.title ? "text-white bg-gradient-to-r from-cyan-500/70 to-blue-500/50" : "text-cyan-600 hover:text-white"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-1"}`}
                 onClick={() => setActive(nav.title)}
               >
