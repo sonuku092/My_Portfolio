@@ -4,7 +4,7 @@ import Button from "./Button";
 import Language from "./Language";
 
 const SkillsCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-col h-[80px] w-[85px]  p-1 rounded-[12px] border-dimWhite feature-card bg-slate-900 cursor-pointer`}>
+  <div className={`flex flex-col h-[80px] w-[85px]  p-1 rounded-[12px] feature-card bg-slate-900 cursor-pointer border-[1px] border-white/20`}>
     <div className={`w-[100%] h-[80%] rounded-[8px] ${styles.flexCenter} bg-slate-100`}>
       <img src={icon} alt="star" className="w-[80%] h-[80%] object-contain" />
     </div>
