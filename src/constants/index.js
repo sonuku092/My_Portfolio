@@ -294,6 +294,7 @@ export const experience = [
       "Varcon Pvt Ltd.",
   },
 ];
+
 export const education = [
   {
     id: "ait",
