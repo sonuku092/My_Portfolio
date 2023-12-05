@@ -22,7 +22,7 @@ const Navbar = () => {
   window.addEventListener("scroll", setFixed)
 
   return (
-    <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? " backdrop-blur-sm bg-white/20 h-[7%] border-b-[1px] border-dimWhite" :"bg-transparent"}`}>
+    <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? " backdrop-blur-sm bg-white/80 h-[7%] border-b-[1px] border-dimWhite" :"bg-transparent"}`}>
       <img src={sk} alt="sonukumar" className="w-auto h-[24px] ss:h-[32px] cursor-pointer hover:bg-white rounded-lg" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 rounded-md">
