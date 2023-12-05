@@ -1,8 +1,9 @@
 import { useState } from "react";
 import styles from "../style";
 
-import { close, logo, menu,sk } from "../assets";
+import { sk } from "../assets";
 import { navLinks } from "../constants";
+import { menu,cancel } from "../icon";
 
 const Navbar = () => {
   const [ fix, setFix] = useState( false);
@@ -44,7 +45,7 @@ const Navbar = () => {
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
-          src={toggle ? close : menu}
+          src={toggle ? cancel : menu}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
