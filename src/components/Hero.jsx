@@ -8,16 +8,16 @@ const Hero = () => {
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 mt-10 xs:mt-5`}>
         
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold text-[24px] xs:text-[32px] ss:text-[44px] sm:text-[52px] md:text-[64px] text-white ss:leading-[70px] leading-[50px]">
+          <h1 className="flex-1 font-Anton font-semibold text-[24px] xs:text-[32px] ss:text-[44px] sm:text-[52px] md:text-[64px] text-white ss:leading-[70px] leading-[50px]">
             Hello, I'm<br/>{" "}
-            <span className="text-gradient text-[42px] xs:text-[52px] ss:text-[62px] sm:text-[72px] md:text-[82px] md:leading-[100px] font-bold">Sonu Kumar</span>{" "}
+            <span className=" font-Pattaya text-gradient text-[42px] xs:text-[52px] ss:text-[62px] sm:text-[72px] md:text-[82px] md:leading-[100px] font-bold">Sonu Kumar</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
           </div>
         </div>
 
-        <h1 className="font-poppins font-semibold text-[28px] xs:text-[36px] ss:text-[48px] sm:text-[56px] md:text-[68px] text-white ss:leading-[70px]  leading-[40px] w-full">
+        <h1 className="font-Pattaya font-semibold text-[28px] xs:text-[36px] ss:text-[48px] sm:text-[56px] md:text-[68px] text-white ss:leading-[70px]  leading-[40px] w-full">
           and I'm a Software Developer.
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5 ss:mb-10 mb-5 text-[16px] ss:text-lg`}>
