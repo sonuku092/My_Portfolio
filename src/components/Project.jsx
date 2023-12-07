@@ -3,7 +3,7 @@ import styles, { layout } from "../style";
 import Button from "./Button";
 
 const ProjectCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-col h-[240px] w-[100%] sm:w-[320px] p-[6px] rounded-[18px] feature-card bg-slate-900 cursor-pointer shadow shadow-gray-400`}>
+  <div className={`flex flex-col h-[240px] w-[100%] sm:w-[320px] p-[6px] rounded-[18px] feature-card bg-slate-900 cursor-pointer border-[1px] border-white/25`}>
     <div className={`w-[100%] h-[100%] rounded-[14px] ${styles.flexCenter} bg-neutral-800 overflow-hidden`}>
       <img src={icon} alt="star" className=" h-full w-fit object-cover object-center" />
     </div>
@@ -32,7 +32,7 @@ const Project = () =>  (
       <Button styles={`mt-10`} />
     </div>
 
-    <div className={`${layout.sectionImg1} flex-col sm:flex-row gap-2`}>
+    <div className={`${layout.sectionImg1} flex-col sm:flex-row gap-4`}>
       {project.map((project, index) => (
         <ProjectCard key={project.id} {...project} index={index} />
       ))}
