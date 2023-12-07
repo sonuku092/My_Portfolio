@@ -37,6 +37,8 @@ import tailwindcss from "./tailwindcss.svg";
 import bseb from "./bseb.png";
 import menu from "./menu.png";
 import cancel from "./cancel.png";
+import redis from "./redis.svg";
+import vuejs from "./vuejs.svg";
 
 
 export {
@@ -79,4 +81,6 @@ export {
   bseb,
   menu,
   cancel,
+  redis,
+  vuejs,
 };

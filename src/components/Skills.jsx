@@ -23,7 +23,7 @@ const Skills = () =>  (
         Skills 
       </h2>
     </div>
-  <section id="Skills" className={layout.section}>
+  <section id="Skills" className={layout.sections}>
     <div className={layout.sectionInfo}>
         <h3 className="font-poppins font-semibold text-white text-[18px] my-2 mx-auto">
             FrontEnd

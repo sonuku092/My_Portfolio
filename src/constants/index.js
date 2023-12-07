@@ -1,5 +1,5 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
-import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git, youtube, azure, hindi, english, database, pdf, algorithm, ait, google_cloud, tailwindcss, bseb } from "../icon";
+import { java, c, cpp, angular, reactjs, nextjs, msserver, firebase, android, html, css, javascript, bootstrap, figma, nodejs, mongodb, express, mysql, python, linux, git, youtube, azure, hindi, english, database, pdf, algorithm, ait, google_cloud, tailwindcss, bseb, redis, vuejs } from "../icon";
 import {project1, project2, project3} from "../image";
 
 export const navLinks = [
@@ -180,6 +180,20 @@ export const backend = [
     id: "msserver",
     icon: msserver,
     title: "MS Server",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "redis",
+    icon: redis,
+    title: "Redis",
+    content:
+      "A balance transfer",
+  },
+  {
+    id: "vuejs",
+    icon: vuejs,
+    title: "Vuejs",
     content:
       "A balance transfer",
   },
