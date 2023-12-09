@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   function setFixed () {
-    if(window.scrollY >= 120) {
+    if(window.scrollY >= 100) {
       setFix(true)
     }
     else{
@@ -22,7 +22,7 @@ const Navbar = () => {
   window.addEventListener("scroll", setFixed)
 
   return (
-    <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? " backdrop-blur-sm bg-white/80 h-[7%] border-b-[1px] border-dimWhite" :"bg-transparent"}`}>
+    <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? " backdrop-blur-sm bg-black/60 h-[7%] border-b-[1px] border-dimWhite" :"bg-transparent"}`}>
       <img src={sk} alt="sonukumar" className="w-auto h-[24px] ss:h-[32px] cursor-pointer hover:bg-white rounded-lg" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 rounded-md">
@@ -30,7 +30,7 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`font-Montserrat font-semibold cursor-pointer text-[16px] px-1 rounded ${
-              active === nav.title ? "text-white font-medium bg-slate-200/20" : "text-dimWhite font-normal hover:text-white"
+              active === nav.title ? "text-white font-medium bg-white/5" : "text-dimWhite font-normal"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
@@ -54,7 +54,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex flex-col"
-          } backdrop-blur-sm bg-white/90 absolute top-[60px] border-2 border-white right-0 mx-2 my-2 p-[4px] min-w-[140px] rounded-lg sidebar`}
+          } backdrop-blur-sm bg-black/90 absolute top-[60px] border-[1px] border-dimWhite right-0 mx-2 my-2 p-[4px] min-w-[140px] rounded-lg sidebar`}
         >
           <h3 className="text-cyan-600 font-poppins font-normal border-b-[1px] border-black/20 text-center">Menu</h3>
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
