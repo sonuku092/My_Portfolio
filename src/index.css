@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Pattaya:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Climate+Crisis&family=Della+Respira&family=Great+Vibes&family=Italiana&family=Kaushan+Script&family=Montserrat&family=Squada+One&family=Kalnia:ital,wght@0,500;1,400&family=Pattaya&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Racing+Sans+One&family=Shrikhand&display=swap');
 
 @tailwind base;
 @tailwind components;

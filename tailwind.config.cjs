@@ -15,6 +15,9 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         Pattaya: ['Pattaya', 'sans-serif'],
         Anton: ['Anton', 'sans-serif'],
+        Racing: ['Racing Sans One', 'sans-serif'],
+        Squada: ['Squada One', 'sans-serif'],
+        Kalnia: ['Kalnia', 'serif'],
       },
     },
     screens: {

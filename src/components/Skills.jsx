@@ -18,8 +18,8 @@ const SkillsCard = ({ icon, title, content, index }) => (
 
 const Skills = () =>  (
     <>
-    <div id="skills" className="mb-10 ss:mt-10 mt-10">
-    <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white -mb-10 w-full text-center">
+    <div id="skills" className="mb-1 ss:mt-10 xs:pt-16">
+    <h2 className="font-Squada font-semibold xs:text-[48px] text-[40px] text-white -mb-10 w-full text-center">
         Skills 
       </h2>
     </div>
