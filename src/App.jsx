@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero, AboutMe, Project, Skills, Language } from "./components";
+import { Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero, AboutMe, Project, Skills} from "./components";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -31,7 +31,7 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         <Skills/>
         <Testimonials />
-        <Clients />
+        {/* <Clients /> */}
         <CTA />
         <Footer />
       </div>
