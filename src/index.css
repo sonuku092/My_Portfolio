@@ -143,6 +143,29 @@
   filter: blur(750px);
 }
 
-.nabbg {
-  
+/* Developer */
+
+h1 span {
+  animation: animate 5s linear infinite;
+}
+h1 span:nth-child(even)
+{
+  animation-delay: 0.4s;
+}
+@keyframes animate{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+  {
+    color: #eafaff;
+    text-shadow: none;
+  }
+  18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+  {
+    color: #fff;
+    text-shadow: 0 0 5px #03bcf4,
+    0 0 7px #03bcf4,
+    0 0 10px #03bcf4,
+    0 0 15px #03bcf4,
+    0 0 25px #03bcf4,
+    0 0 40px #03bcf4;
+  }
 }
