@@ -18,11 +18,11 @@ const Hero = () => {
         </div>
 
         <h1 className="font-Kalnia font-normal text-[18px] xs:text-[24px] text-white">
-          and I'm a 
-          <span className=" ml-1 font-Squada font-semibold text-[28px] xs:text-[36px] ss:text-[48px] sm:text-[56px] md:text-[68px] ss:leading-[70px]  leading-[40px] w-full">
+          and I'm a <br className=" ss:hidden"/>
+          <span className=" ml-1 font-Squada font-semibold text-[36px] xs:text-[36px] ss:text-[48px] sm:text-[56px] md:text-[68px] ss:leading-[70px]  leading-[40px] w-full">
            {" "}Software
             </span>
-            <span className="ml-1 font-Squada font-semibold text-[28px] xs:text-[36px] ss:text-[48px] sm:text-[56px] md:text-[68px] ss:leading-[70px]  leading-[40px] w-full">
+            <span className="ml-1 font-Squada font-semibold text-[36px] xs:text-[36px] ss:text-[48px] sm:text-[56px] md:text-[68px] ss:leading-[70px]  leading-[40px] w-full">
            {" "}Developer
             </span>
         </h1>
