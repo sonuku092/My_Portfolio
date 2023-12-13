@@ -10,7 +10,9 @@ const Hero = () => {
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-Kalnia text-[18px] xs:text-[20px] ss:text-[24px] sm:text-[28px] md:text-[32px] text-white ss:leading-[45px] leading-[30px]">
             Hello, I'm<br/>{" "}
-            <span1 className=" font-Racing text-gradient text-[46px] xs:text-[52px] ss:text-[62px] sm:text-[72px] md:text-[92px] md:leading-[100px] font-bold">Sonu Kumar</span1>{" "}
+            <span1 className=" name font-Racing text-[46px] xs:text-[52px] ss:text-[62px] sm:text-[72px] md:text-[92px] md:leading-[100px] font-bold">
+              Sonu Kumar
+              </span1>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />

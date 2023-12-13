@@ -143,6 +143,12 @@
   filter: blur(750px);
 }
 
+.name{
+  text-shadow: 0 0 5px #03bcf4,
+    0 0 7px #12c4fa,
+    0 0 10px #24cbfe;
+}
+
 /* Developer */
 
 h1 span {
