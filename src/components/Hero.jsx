@@ -7,7 +7,7 @@ const Hero = () => {
     <section id="profile" className={`flex md:flex-row flex-col sm:py-[100px] py-6 `}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 mt-10 xs:mt-5`}>
         
-        <div className="flex flex-row justify-between items-center w-full">
+        <div className="flex flex-row justify-between items-center w-full select-none">
           <h1 className="flex-1 font-Kalnia text-[18px] xs:text-[20px] ss:text-[24px] sm:text-[28px] md:text-[32px] text-white ss:leading-[55px] leading-[45px]">
             Hello, I'm<br/>{" "}
             <span1 className=" name font-Racing text-[46px] xs:text-[52px] ss:text-[62px] sm:text-[72px] md:text-[92px] md:leading-[100px] font-bold">
@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <h1 className="font-Kalnia font-normal text-[18px] xs:text-[24px] text-white">
+        <h1 className="font-Kalnia font-normal text-[18px] xs:text-[24px] text-white select-none">
           and I'm a <br className=" ss:hidden"/>
           <span className=" ml-1 font-Squada font-semibold text-[36px] xs:text-[36px] ss:text-[48px] sm:text-[56px] md:text-[68px] ss:leading-[70px]  leading-[40px] w-full">
            {" "}Software
