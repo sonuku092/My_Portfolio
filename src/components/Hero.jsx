@@ -5,20 +5,20 @@ import GetStarted from "./GetStarted";
 const Hero = () => {
 
   const downloadAndOpenCV = () => {
-    fetch(Resume)
-      .then(response => response.blob())
-      .then(blob => {
-        const url = window.URL.createObjectURL(new Blob([blob]));
-        const link = document.createElement('a');
-        link.href = url;
-        link.setAttribute('download', 'SonuKumar_CV.pdf');
-        document.body.appendChild(link);
-        link.click();
-        link.parentNode.removeChild(link);
-      })
-      .catch(error => {
-        console.error('Error downloading CV:', error);
-      });
+    // fetch(Resume)
+    //   .then(response => response.blob())
+    //   .then(blob => {
+    //     const url = window.URL.createObjectURL(new Blob([blob]));
+    //     const link = document.createElement('a');
+    //     link.href = url;
+    //     link.setAttribute('download', 'SonuKumar_CV.pdf');
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     link.parentNode.removeChild(link);
+    //   })
+    //   .catch(error => {
+    //     console.error('Error downloading CV:', error);
+    //   });
     window.open(Resume, "_blank");
   }
 
