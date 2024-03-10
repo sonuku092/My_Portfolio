@@ -75,7 +75,7 @@ const Hero = () => {
       </div>
 
       <div className={`${styles.flexCenter}`}>
-        <GetStarted className />
+        <GetStarted />
       </div>
     </section>
   );
