@@ -313,16 +313,16 @@ export const education = [
   {
     id: "ait",
     icon: ait,
-    title: "Atria Institute of Technology",
+    title: "Atria Institute of Technology, BLR",
     content:
-      "BE in Information Science & Engineering",
+      "BE in Information Science & Engineering (2020-24)",
   },
   {
     id: "bseb",
     icon: bseb,
-    title: "BSEB",
+    title: "LCS College, Darbhanga",
     content:
-      "12th",
+      "Class 12th (Intermediate). (2018-2020)",
   },
 ];
 export const feedback = [
