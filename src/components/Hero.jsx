@@ -1,26 +1,25 @@
 import styles from "../style";
-import { discount, robot, heroimg } from "../assets";
-import Resume_SonuKM from '../../public/Resume_SonuKM.pdf';
+import { discount, robot, heroimg, Resume } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => {
 
   const downloadAndOpenCV = () => {
-    // fetch(Resume)
-    //   .then(response => response.blob())
-    //   .then(blob => {
-    //     const url = window.URL.createObjectURL(new Blob([blob]));
-    //     const link = document.createElement('a');
-    //     link.href = url;
-    //     link.setAttribute('download', 'SonuKumar_CV.pdf');
-    //     document.body.appendChild(link);
-    //     link.click();
-    //     link.parentNode.removeChild(link);
-    //   })
-    //   .catch(error => {
-    //     console.error('Error downloading CV:', error);
-    //   });
-    window.open(Resume_SonuKM, "_blank");
+    fetch(Resume)
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'SonuKumar_CV.pdf');
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode.removeChild(link);
+        window.open(Resume, "_blank"); // Open the downloaded file in a new tab
+      })
+      .catch(error => {
+        console.error('Error downloading CV:', error);
+      });
   }
 
   return (
@@ -56,7 +55,7 @@ const Hero = () => {
 
         
         <button className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 "
-          onClick={downloadAndOpenCV()}>
+          onClick={() => {downloadAndOpenCV();}}>
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <a className={`${styles.paragraph} ml-2`}>
             Download My CV
@@ -75,7 +74,7 @@ const Hero = () => {
       </div>
 
       <div className={`${styles.flexCenter}`}>
-        <GetStarted />
+        <GetStarted className />
       </div>
     </section>
   );
