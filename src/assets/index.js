@@ -27,6 +27,7 @@ import about from "./about.png";
 import heroimg from "./heroimg.png";
 import sk from "./sk.png";
 import sonukm from "./sonukm.png";
+import Resume from "./Resume_SonuKM.pdf";
 
 export {
   airbnb,
@@ -58,4 +59,5 @@ export {
   heroimg,
   sk,
   sonukm,
+  Resume,
 };
