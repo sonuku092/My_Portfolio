@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../style";
 
-import { sk } from "../assets";
+import { sk, sonukm } from "../assets";
 import { navLinks } from "../constants";
 import { menu,cancel } from "../icon";
 
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className={`w-full flex py-4 justify-between items-center navbar fixed z-10  ${styles.paddingX} ${fix ? " backdrop-blur-sm bg-black/60 h-[7%] border-b-[1px] border-dimWhite" :"bg-transparent"}`}>
-      <img src={sk} alt="sonukumar" className="w-auto h-[24px] ss:h-[32px] cursor-pointer hover:bg-white rounded-lg" />
+      <img src={sonukm} alt="sonukumar" className="w-auto h-[24px] ss:h-[32px] cursor-pointer" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 rounded-md">
         {navLinks.map((nav, index) => (
