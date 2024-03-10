@@ -35,12 +35,12 @@ const Hero = () => {
         </p>
 
         
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 ">
+        <button className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 ">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <a className={`${styles.paragraph} ml-2`} download="Resume_Sonu" href={Resume}>
             Download My CV
           </a>
-        </div>
+        </button>
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} ss:my-0 my-10 relative`}>
