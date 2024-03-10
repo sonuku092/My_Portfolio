@@ -35,8 +35,8 @@ import ait from "./ait.png";
 import google_cloud from "./google_cloud.svg";
 import tailwindcss from "./tailwindcss.svg";
 import bseb from "./bseb.png";
-import menu from "./menu.png";
-import cancel from "./cancel.png";
+import menu from "./menu.svg";
+import cancel from "./cross.svg";
 import redis from "./redis.svg";
 import vuejs from "./vuejs.svg";
 
