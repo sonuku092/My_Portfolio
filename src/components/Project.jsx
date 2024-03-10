@@ -19,7 +19,6 @@ const ProjectCard = ({ icon, title, content, index }) => (
 );
 
 const Project = () =>  (
-  <>
   <section id="project" className={`${layout.section} relative `}>
         <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-0" />
     <div className={layout.sectionInfo1}>
@@ -40,36 +39,6 @@ const Project = () =>  (
       ))}
     </div>
   </section>
-  <div className=" gap-2 flex ">
-    <div className=" items-center h-20 w-36 rounded-md bg-white/20 shadow-xl">
-        <h2 className="">Works</h2>
-    </div>
-    <div className=" h-20 w-36 rounded-md bg-white/20 hover:shadow-xl">
-
-    </div>
-    <div className=" h-20 w-36 rounded-md bg-white/20">
-
-    </div>
-    <div className=" h-20 w-36 rounded-md bg-white/20 shadow-xl">
-
-    </div>
-    <div className=" h-20 w-36 rounded-md bg-white/20 hover:shadow-xl">
-
-    </div>
-    <div className=" h-20 w-36 rounded-md bg-white/20">
-
-    </div>
-    <div className=" h-20 w-36 rounded-md bg-white/20 shadow-xl">
-
-    </div>
-    <div className=" h-20 w-36 rounded-md bg-white/20 hover:shadow-xl">
-
-    </div>
-    <div className=" h-20 w-36 rounded-md bg-white/20">
-
-    </div>
-  </div>
-  </>
 );
 
 export default Project;

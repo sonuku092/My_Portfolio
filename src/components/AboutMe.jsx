@@ -68,9 +68,9 @@ const AboutMe = () => (
         milestone.
       </p>
 
-      <div className="flex flex-row flex-wrap mt-10 content-center items-start  ">
+      <div className="flex flex-row flex-wrap mt-10 content-center items-start w-full justify-end ">
         <div
-          className={`${layout.section1} flex-col border-[1px] rounded-[12px] border-white/20 m-1`}
+          className={`${layout.section1} flex-col flex-1 border-[1px] rounded-[12px] border-white/20 m-1`}
         >
           <h3 className="text-dimWhite text-[20px] w-full text-center font-poppins font-semibold leading-8 rounded-xl m-1">
             Experience
@@ -81,7 +81,7 @@ const AboutMe = () => (
         </div>
 
         <div
-          className={`${layout.section1} flex-col border-[1px] rounded-[12px] border-white/20 m-1`}
+          className={`${layout.section1} flex-col flex-1 border-[1px] rounded-[12px] border-white/20 m-1`}
         >
           <h3 className="text-dimWhite text-[20px] w-full text-center font-poppins font-semibold leading-8 rounded-xl m-1">
             Education

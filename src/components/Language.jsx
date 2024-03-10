@@ -19,7 +19,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Language = () =>  (
   <section id="" className={layout.section}>
-    <div className={`${layout.sectionImg} flex-col border-[1px] border-white/20 rounded-[12px]`}>
+    <div className={`flex-col flex-1 border-[1px] border-white/20 rounded-[12px]`}>
       <h3 className="text-white text-[20px] w-full text-center font-poppins font-semibold leading-10 rounded-xl m-1">
         Soft Skills
       </h3>
