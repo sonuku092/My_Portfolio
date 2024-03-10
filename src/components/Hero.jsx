@@ -3,6 +3,25 @@ import { discount, robot, heroimg, Resume } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => {
+
+  const downloadAndOpenCV = () => {
+    fetch(Resume)
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'SonuKumar_CV.pdf');
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode.removeChild(link);
+      })
+      .catch(error => {
+        console.error('Error downloading CV:', error);
+      });
+    window.open(Resume, "_blank");
+  }
+
   return (
     <section id="profile" className={`flex md:flex-row flex-col sm:py-[100px] py-6 `}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 mt-10 xs:mt-5`}>
@@ -35,9 +54,10 @@ const Hero = () => {
         </p>
 
         
-        <button className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 ">
+        <button className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 "
+          onClick={() => {downloadAndOpenCV();}}>
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-          <a className={`${styles.paragraph} ml-2`} download="Resume_Sonu" href={Resume}>
+          <a className={`${styles.paragraph} ml-2`}>
             Download My CV
           </a>
         </button>
