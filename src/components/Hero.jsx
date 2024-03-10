@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot, heroimg, Resume } from "../assets";
+import { discount, robot, heroimg } from "../assets";
 import Resume_SonuKM from '../../public/Resume_SonuKM.pdf';
 import GetStarted from "./GetStarted";
 
