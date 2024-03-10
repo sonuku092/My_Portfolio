@@ -1,5 +1,6 @@
 import styles from "../style";
 import { discount, robot, heroimg, Resume } from "../assets";
+import Resume_SonuKM from '../../public/Resume_SonuKM.pdf';
 import GetStarted from "./GetStarted";
 
 const Hero = () => {
@@ -19,7 +20,7 @@ const Hero = () => {
     //   .catch(error => {
     //     console.error('Error downloading CV:', error);
     //   });
-    window.open(Resume, "_blank");
+    window.open(Resume_SonuKM, "_blank");
   }
 
   return (
@@ -55,7 +56,7 @@ const Hero = () => {
 
         
         <button className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 "
-          onClick={() => {downloadAndOpenCV();}}>
+          onClick={downloadAndOpenCV()}>
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <a className={`${styles.paragraph} ml-2`}>
             Download My CV
