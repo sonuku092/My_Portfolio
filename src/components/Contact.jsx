@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import styles from "../style";
 
@@ -12,6 +12,32 @@ const Contact = () => {
   const maxNameChars = 50;
   const maxEmailChars = 75;
   const maxMessageWords = 200;
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_3q377ph', 'template_4m0l4ar', form.current, {
+        publicKey: 'D0j4NrMUxqyc49G5T',
+      })
+      .then(
+        () => {
+          alert('Message sent!');
+          setName("");
+          setEmail("");
+          setMessage("");
+          setNameTouched(false);
+          setEmailTouched(false);
+          setMessageTouched(false);
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -52,7 +78,8 @@ const Contact = () => {
         </h2>
         <div className="">
           <form
-          
+            ref={form}
+            onSubmit={sendEmail}
             className="space-y-4"
           >
             <div className="flex-row sm:flex gap-4">
