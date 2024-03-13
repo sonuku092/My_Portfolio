@@ -70,6 +70,7 @@ const Contact = () => {
 
   return (
     <section
+      id="contact"
       className={`sm:px-4 px-2 sm:py-4 py-2 sm:flex-row flex-col bg-black-gradient-2 rounded-[14px] box-shadow`}
     >
       <div className="flex-1 flex flex-col rounded-lg text-white">
