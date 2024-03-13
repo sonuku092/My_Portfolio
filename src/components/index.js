@@ -12,6 +12,7 @@ import AboutMe from "./AboutMe";
 import Project from "./Project";
 import Skills from "./Skills";
 import Language from "./Language";
+import Contact from "./Contact";
 
 export {
   Navbar,
@@ -28,4 +29,5 @@ export {
   Project,
   Skills,
   Language,
+  Contact,
 };
