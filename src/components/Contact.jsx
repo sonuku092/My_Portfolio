@@ -23,7 +23,7 @@ const Contact = () => {
       })
       .then(
         () => {
-          alert('Message sent!');
+          alert('Message sent successfully!');
           setName("");
           setEmail("");
           setMessage("");
