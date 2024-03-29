@@ -29,8 +29,8 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-Montserrat font-semibold cursor-pointer text-[16px] px-1 rounded ${
-              active === nav.title ? "text-white font-medium bg-white/5" : "text-dimWhite font-normal"
+            className={`font-Montserrat font-bold cursor-pointer text-[16px] px-1 rounded ${
+              active === nav.title ? "text-white font-medium" : "text-dimWhite font-normal"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
