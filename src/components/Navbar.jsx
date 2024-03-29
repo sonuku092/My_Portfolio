@@ -39,10 +39,6 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="sm:block hidden h-[35px] w-[80px] border border-white rounded-full mx-4 hover:bg-white text-center i ">
-            <p className="text-white hover:text-black mt-[4px]">Hello</p>
-      </div>
-
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
           src={toggle ? cancel : menu}
