@@ -161,7 +161,7 @@
 
 /* Developer */
 
-h1 span {
+/* h1 span {
   animation: animate 5s linear infinite;
 }
 h1 span:nth-child(even)
@@ -184,4 +184,4 @@ h1 span:nth-child(even)
     0 0 25px #03bcf4,
     0 0 40px #03bcf4;
   }
-}
+} */

@@ -1,6 +1,5 @@
 import styles from "../style";
-import { discount, robot, heroimg, Resume } from "../assets";
-import GetStarted from "./GetStarted";
+import { discount,  heroimg, Resume } from "../assets";
 
 const Hero = () => {
   const downloadAndOpenCV = () => {
@@ -43,33 +42,22 @@ const Hero = () => {
   return (
     <section
       id="profile"
-      className={`flex md:flex-row flex-col sm:py-[100px] py-6 `}
+      className={`flex md:flex-row flex-col sm:py-[100px] py-6 sm:h-[100vh] h-auto`}
     >
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 mt-10 xs:mt-5`}
       >
         <div className="flex flex-row justify-between items-center w-full select-none">
           <h1 className="flex-1 font-Kalnia text-[18px] xs:text-[20px] ss:text-[24px] sm:text-[28px] md:text-[32px] text-white ss:leading-[55px] leading-[45px]">
-            Hello, I'm
-            <br />{" "}
-            <span1 className=" name font-Racing text-[46px] xs:text-[52px] ss:text-[62px] sm:text-[72px] md:text-[92px] md:leading-[100px] font-bold">
-              Sonu Kumar
-            </span1>{" "}
+            Hello, I'm Sonu Kumar
           </h1>
-          <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
-          </div>
         </div>
 
         <h1 className="font-Kalnia font-normal text-[18px] xs:text-[24px] text-white select-none">
-          and I'm a <br className=" ss:hidden" />
+          a
           <span className=" ml-1 font-Squada font-semibold text-[36px] xs:text-[36px] ss:text-[48px] sm:text-[56px] md:text-[68px] ss:leading-[70px]  leading-[40px] w-full">
             {" "}
-            Software
-          </span>
-          <span className="ml-1 font-Squada font-semibold text-[36px] xs:text-[36px] ss:text-[48px] sm:text-[56px] md:text-[68px] ss:leading-[70px]  leading-[40px] w-full">
-            {" "}
-            Developer
+            Software Developer
           </span>
         </h1>
         <p
@@ -85,7 +73,7 @@ const Hero = () => {
           onClick={downloadAndOpenCV}
         >
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-          <p className={`${styles.paragraph} ml-2`}>Download My CV</p>
+          <p className={`${styles.paragraph} ml-2`}>Download CV</p>
         </button>
       </div>
 
@@ -103,10 +91,6 @@ const Hero = () => {
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         {/* gradient end */}
-      </div>
-
-      <div className={`${styles.flexCenter}`}>
-        <GetStarted />
       </div>
     </section>
   );
