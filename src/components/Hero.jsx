@@ -49,7 +49,7 @@ const Hero = () => {
       >
         <div className="flex flex-row justify-between items-center w-full select-none">
           <h1 className="flex-1 font-Kalnia text-[18px] xs:text-[20px] ss:text-[24px] sm:text-[28px] md:text-[32px] text-white ss:leading-[55px] leading-[45px]">
-            Hello, I'm Sonu Kumar Mukhiya
+            Hello, I'm Sonu Kumar
           </h1>
         </div>
 
