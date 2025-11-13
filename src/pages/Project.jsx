@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Hero } from "../components";
+import { Navbar, Hero, AboutMe } from "../components";
 import styles from "../style";
 
 function Project() {
