@@ -77,6 +77,7 @@ const AboutMe = () => (
           </h3>
           {experience.map((experience, index) => (
             <ExperienceCard key={experience.id} {...experience} index={index} />
+            
           ))}
         </div>
 

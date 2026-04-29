@@ -307,6 +307,13 @@ export const experience = [
     content:
       "Varcon Pvt Ltd.",
   },
+  {
+    id: "2",
+    icon: google_cloud,
+    title: "Lite Bite Foods Pvt Ltd, Mumbai",
+    content:
+      "IT Executive, June 2025 - Present",
+  },
 ];
 
 export const education = [
