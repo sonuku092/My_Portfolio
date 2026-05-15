@@ -65,7 +65,7 @@ const AboutMe = () => (
         with a Bachelor of Engineering in Information Science and Engineering.
         With a firm foundation in technical knowledge and keen problem-solving
         acumen, I successfully navigated my academic journey to achieve this
-        milestone..
+        milestone.
       </p>
 
       <div className="flex flex-row flex-wrap mt-10 content-center items-start w-full justify-end ">
