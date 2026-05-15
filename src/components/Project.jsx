@@ -1,9 +1,14 @@
+
 import { project } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import { Link } from "react-router-dom";
+import { useGsapReveal } from "../hooks/useGsapReveal";
 
-const ProjectCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-col h-[240px] w-[100%] sm:w-[320px] p-[6px] rounded-[18px] feature-card bg-slate-900 cursor-pointer border-[1px] border-white/25`}>
+const ProjectCard = ({ id, icon, title, content, index }) => (
+  <Link to={`/project/${id.replace('project-', '')}`}
+    className="flex flex-col h-[240px] w-[100%] sm:w-[320px] p-[6px] rounded-[18px] feature-card bg-slate-900 cursor-pointer border-[1px] border-white/25 hover:scale-105 transition-transform"
+  >
     <div className={`w-[100%] h-[100%] rounded-[14px] ${styles.flexCenter} bg-neutral-800 overflow-hidden`}>
       <img src={icon} alt="star" className=" h-full w-fit object-cover object-center" />
     </div>
@@ -15,30 +20,34 @@ const ProjectCard = ({ icon, title, content, index }) => (
         {content}
       </p>
     </div>
-  </div>
+  </Link>
 );
 
-const Project = () =>  (
-  <section id="project" className={`${layout.section} relative `}>
-        <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-0" />
-    <div className={layout.sectionInfo1}>
-      <h2 className={styles.heading2}>
-        Project, <br className="sm:block hidden" /> 
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Recent Project
-      </p>
-      <div className="border border-white rounded-full px-2 hover:bg-white text-center cursor-pointer">
-        <p className="text-white hover:text-black m-2 font-sans font-semibold">See More</p>
+
+const Project = () =>  {
+  const revealRef = useGsapReveal();
+  return (
+    <section id="project" ref={revealRef} className={`${layout.section} relative `}>
+      <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-0" />
+      <div className={layout.sectionInfo1}>
+        <h2 className={styles.heading2}>
+          Project, <br className="sm:block hidden" /> 
+        </h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          Recent Project
+        </p>
+        <div className="border border-white rounded-full px-2 hover:bg-white text-center cursor-pointer">
+          <p className="text-white hover:text-black m-2 font-sans font-semibold">See More</p>
+        </div>
       </div>
-    </div>
 
-    <div className={`${layout.sectionImg1} flex-col sm:flex-row gap-4`}>
-      {project.map((project, index) => (
-        <ProjectCard key={project.id} {...project} index={index} />
-      ))}
-    </div>
-  </section>
-);
+      <div className={`${layout.sectionImg1} flex-col sm:flex-row gap-4`}>
+        {project.map((project, index) => (
+          <ProjectCard key={project.id} {...project} index={index} />
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Project;

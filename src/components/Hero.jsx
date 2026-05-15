@@ -1,7 +1,10 @@
+
 import styles from "../style";
-import { discount,  heroimg, Resume } from "../assets";
+import { discount, heroimg, Resume } from "../assets";
+import { useGsapReveal } from "../hooks/useGsapReveal";
 
 const Hero = () => {
+  const revealRef = useGsapReveal();
   const downloadAndOpenCV = () => {
     // Displaying an alert message while downloading
     const alertDiv = document.createElement("div");
@@ -42,6 +45,7 @@ const Hero = () => {
   return (
     <section
       id="profile"
+      ref={revealRef}
       className={`flex md:flex-row flex-col sm:py-[100px] py-6 sm:h-[100vh] h-auto`}
     >
       <div

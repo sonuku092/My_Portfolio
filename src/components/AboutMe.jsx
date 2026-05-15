@@ -1,6 +1,8 @@
+
 import { apple, bill, about, google } from "../assets";
 import styles, { layout } from "../style";
 import { experience, education } from "../constants";
+import { useGsapReveal } from "../hooks/useGsapReveal";
 
 const EducationCard = ({ icon, title, content, index }) => (
   <div
@@ -46,18 +48,20 @@ const ExperienceCard = ({ icon, title, content, index }) => (
   </div>
 );
 
-const AboutMe = () => (
-  <section id="about" className={layout.sectionReverse}>
-    <div className={layout.sectionImgReverse}>
-      <img
-        src={about}
-        alt="about"
-        className="w-[80%] h-auto relative z-[5] cursor-pointer"
-      />
-    </div>
+const AboutMe = () => {
+  const revealRef = useGsapReveal();
+  return (
+    <section id="about" ref={revealRef} className={layout.sectionReverse}>
+      <div className={layout.sectionImgReverse}>
+        <img
+          src={about}
+          alt="about"
+          className="w-[80%] h-auto relative z-[5] cursor-pointer"
+        />
+      </div>
 
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>About Me</h2>
+      <div className={layout.sectionInfo}>
+        <h2 className={styles.heading2}>About Me</h2>
       <p className={`${styles.paragraph} max-w-[680px] mt-5 `}>
         👋 Hello! I'm{" "}
         <span className="text-white cursor-pointer">Sonu Kumar Mukhiya</span>, a
@@ -95,5 +99,5 @@ const AboutMe = () => (
     </div>
   </section>
 );
-
-export default AboutMe;
+}
+export default AboutMe
