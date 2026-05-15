@@ -65,7 +65,7 @@ const Hero = () => {
         >
           Feel free to connect with me to discuss tech, share ideas, or explore
           potential opportunities. Let's embark on a journey of innovation
-          together!
+          together! Now this is from my personal branch
         </p>
 
         <button
